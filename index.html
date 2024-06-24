@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Risk Record Formatter</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<!-- <label for="DRMCatagory">Choose a catagory:</label>
+  <select id="DRM" name="DRM">
+    <option value="LunarOrbit">Lunar orbit</option>
+    <option value="LunarLanding">Lunar landing</option>
+    <option value="Mars">Mars</option>
+  </select>
+  <br>
+  <label for="Timeperiod">Choose a time period:</label>
+  <select id="Timeperiod" name="Timeperiod">
+    <option value="Short">Short <30 </option>
+    <option value="long">long<30 </option>
+    <option value="prep">Preparatory </option>
+    <option value="marsdum">Mars 1240 days</option>
+  </select> -->
+
+<body id="body">
+  <h1>Risk Postures Formatting</h1>
+  <form>
+    <h2>Low Earth Orbit</h2>
+      <h3>Short (< 30 d)</h3>
+        <h4>In Mission Operations</h4>
+          <label >LxC</label>
+            <select id="LEOSIMOLxC">
+              <option value="1 x 1">1x1</option>
+              <option value="2 x 1">2x1</option>
+              <option value="3 x 1">3x1</option>
+              <option value="4 x 1">4x1</option>
+              <option value="5 x 1">5x1</option>
+              <option value="1 x 2">1x2</option>
+              <option value="2 x 2">2x2</option>
+              <option value="3 x 2">3x2</option>
+              <option value="4 x 2">4x2</option>
+              <option value="5 x 2">5x2</option>
+              <option value="1 x 3">1x3</option>
+              <option value="2 x 3">2x3</option>
+              <option value="3 x 3">3x3</option>
+              <option value="4 x 3">4x3</option>
+              <option value="5 x 3">5x3</option>
+              <option value="1 x 4">1x4</option>
+              <option value="2 x 4">2x4</option>
+              <option value="3 x 4">3x4</option>
+              <option value="4 x 4">4x4</option>
+              <option value="5 x 4">5x4</option>
+              <option value="1 x 5">1x5</option>
+              <option value="2 x 5">2x5</option>
+              <option value="3 x 5">3x5</option>
+              <option value="4 x 5">4x5</option>
+              <option value="5 x 5">5x5</option>
+            </select>
+          <br><br>
+            <label>Likelihood</label>
+            <select id="LEOSIMOLxCL">
+              <option value="Very Low">Very Low</option>
+              <option value="Low">Low</option>
+              <option value="Moderate">Moderate</option>
+              <option value="High">High</option>
+              <option value="Very High">Very High</option>
+            </select>
+            <p>LxC Driver for Likelihood</p>
+              <input type="text" id="LEOSIMOLxCDL">
+            <p>LxC Driver for Consequences</p>
+              <input type="text" id="LEOSIMOLxCDC">
+            <p>Rationale for Risk Disposition</p>
+              <input type="text" id="LEOSIMORRD">
+            <p>DRM Specific Assumptions</p>
+              <input type="text" id="LEOSIMODSA">
+            <br><br>  
+            <label>Level of Evidence (LOE)</label>
+              <select id="LEOSIMOLxCLoE">
+                <option value="1 - Strong">1-Strong</option>
+                <option value="2 - Moderate">2-Moderate</option>
+                <option value="3 - Weak">3-Weak</option>
+                <option value="4 - Speculative">4-Speculative</option>
+
+              </select>
+          
+        <h4>Long Term Health</h4>
+          <label >LxC</label>
+          <select id="LEOSLTHLxC">
+            <option value="1 x 1">1x1</option>
+            <option value="2 x 1">2x1</option>
+            <option value="3 x 1">3x1</option>
+            <option value="4 x 1">4x1</option>
+            <option value="5 x 1">5x1</option>
+            <option value="1 x 2">1x2</option>
+            <option value="2 x 2">2x2</option>
+            <option value="3 x 2">3x2</option>
+            <option value="4 x 2">4x2</option>
+            <option value="5 x 2">5x2</option>
+            <option value="1 x 3">1x3</option>
+            <option value="2 x 3">2x3</option>
+            <option value="3 x 3">3x3</option>
+            <option value="4 x 3">4x3</option>
+            <option value="5 x 3">5x3</option>
+            <option value="1 x 4">1x4</option>
+            <option value="2 x 4">2x4</option>
+            <option value="3 x 4">3x4</option>
+            <option value="4 x 4">4x4</option>
+            <option value="5 x 4">5x4</option>
+            <option value="1 x 5">1x5</option>
+            <option value="2 x 5">2x5</option>
+            <option value="3 x 5">3x5</option>
+            <option value="4 x 5">4x5</option>
+            <option value="5 x 5">5x5</option>
+          </select>
+          <br><br>
+          <label>Likelihood</label>
+          <select id="LEOSLTHLxCL">
+            <option value="Very Low">Very Low</option>
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="High">High</option>
+            <option value="Very High">Very High</option>
+          </select>
+          <p>LxC Driver for Likelihood </p>
+            <input type="text" id="LEOSLTHLxCDL">
+          <p>LxC Driver for Consequences</p>
+          <input type="text" id="LEOSLTHLxCDC">
+          <p>Rationale for Risk Disposition</p>
+            <input type="text" id="LEOSLTHRRD">
+          <p>DRM Specific Assumptions</p>
+            <input type="text" id="LEOSLTHDSA">
+            <br><br>
+            <label>Level of Evidence (LOE)</label>
+              <select id="LEOSLTHLxCLoE">
+                <option value="1 - Strong">1-Strong</option>
+                <option value="2 - Moderate">2-Moderate</option>
+                <option value="3 - Weak">3-Weak</option>
+                <option value="4 - Speculative">4-Speculative</option>
+
+              </select>
+
+      <h3>Long (30 d - 1 yr)</h3>
+        <h4>In Mission Operations</h4>
+          <label >LxC</label>
+          <select id="LEOLIMOLxC">
+            <option value="1 x 1">1x1</option>
+            <option value="2 x 1">2x1</option>
+            <option value="3 x 1">3x1</option>
+            <option value="4 x 1">4x1</option>
+            <option value="5 x 1">5x1</option>
+            <option value="1 x 2">1x2</option>
+            <option value="2 x 2">2x2</option>
+            <option value="3 x 2">3x2</option>
+            <option value="4 x 2">4x2</option>
+            <option value="5 x 2">5x2</option>
+            <option value="1 x 3">1x3</option>
+            <option value="2 x 3">2x3</option>
+            <option value="3 x 3">3x3</option>
+            <option value="4 x 3">4x3</option>
+            <option value="5 x 3">5x3</option>
+            <option value="1 x 4">1x4</option>
+            <option value="2 x 4">2x4</option>
+            <option value="3 x 4">3x4</option>
+            <option value="4 x 4">4x4</option>
+            <option value="5 x 4">5x4</option>
+            <option value="1 x 5">1x5</option>
+            <option value="2 x 5">2x5</option>
+            <option value="3 x 5">3x5</option>
+            <option value="4 x 5">4x5</option>
+            <option value="5 x 5">5x5</option>
+          </select>
+        <br><br>
+        <label>Likelihood</label>
+        <select id="LEOLIMOLxCL">
+          <option value="Very Low">Very Low</option>
+          <option value="Low">Low</option>
+          <option value="Moderate">Moderate</option>
+          <option value="High">High</option>
+          <option value="Very High">Very High</option>
+        </select>
+          <p>LxC Driver for Likelihood </p>
+            <input type="text" id="LEOLIMOLxCDL">
+          <p>LxC Driver for Consequences</p>
+          <input type="text" id="LEOLIMOLxCDC">
+          <p>Rationale for Risk Disposition</p>
+            <input type="text" id="LEOLIMORRD">
+          <p>DRM Specific Assumptions</p>
+            <input type="text" id="LEOLIMODSA">
+          <br><br>
+          <label>Level of Evidence (LOE)</label>
+          <select id="LEOLIMOLxCLoE">
+            <option value="1 - Strong">1-Strong</option>
+            <option value="2 - Moderate">2-Moderate</option>
+            <option value="3 - Weak">3-Weak</option>
+            <option value="4 - Speculative">4-Speculative</option>
+
+          </select>
+        <h4>Long Term Health</h4>
+          <label >LxC</label>
+          <select id="LEOLLTHLxC">
+            <option value="1 x 1">1x1</option>
+            <option value="2 x 1">2x1</option>
+            <option value="3 x 1">3x1</option>
+            <option value="4 x 1">4x1</option>
+            <option value="5 x 1">5x1</option>
+            <option value="1 x 2">1x2</option>
+            <option value="2 x 2">2x2</option>
+            <option value="3 x 2">3x2</option>
+            <option value="4 x 2">4x2</option>
+            <option value="5 x 2">5x2</option>
+            <option value="1 x 3">1x3</option>
+            <option value="2 x 3">2x3</option>
+            <option value="3 x 3">3x3</option>
+            <option value="4 x 3">4x3</option>
+            <option value="5 x 3">5x3</option>
+            <option value="1 x 4">1x4</option>
+            <option value="2 x 4">2x4</option>
+            <option value="3 x 4">3x4</option>
+            <option value="4 x 4">4x4</option>
+            <option value="5 x 4">5x4</option>
+            <option value="1 x 5">1x5</option>
+            <option value="2 x 5">2x5</option>
+            <option value="3 x 5">3x5</option>
+            <option value="4 x 5">4x5</option>
+            <option value="5 x 5">5x5</option>
+          </select>
+          <br><br>
+          <label>Likelihood</label>
+          <select id="LEOLLTHLxCL">
+            <option value="Very Low">Very Low</option>
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="High">High</option>
+            <option value="Very High">Very High</option>
+          </select>
+          <p>LxC Driver for Likelihood </p>
+            <input type="text" id="LEOLLTHLxCDL">
+          <p>LxC Driver for Consequences</p>
+            <input type="text" id="LEOLLTHLxCDC">
+          <p>Rationale for Risk Disposition</p>
+            <input type="text" id="LEOLLTHRRD">
+          <p>DRM Specific Assumptions</p>
+            <input type="text" id="LEOLLTHDSA">
+          
+          <br><br>  
+          <label>Level of Evidence (LOE)</label>
+            <select id="LEOLLTHLxCLoE">
+              <option value="1 - Strong">1-Strong</option>
+              <option value="2 - Moderate">2-Moderate</option>
+              <option value="3 - Weak">3-Weak</option>
+              <option value="4 - Speculative">4-Speculative</option>
+
+            </select>
+    <h2>Lunar Orbital</h2>
+      <h3>Short (< 30 d)</h3>
+        <h4>In Mission Operations</h4>
+          <label >LxC</label>
+          <select id="LOSIMOLxC">
+            <option value="1 x 1">1x1</option>
+            <option value="2 x 1">2x1</option>
+            <option value="3 x 1">3x1</option>
+            <option value="4 x 1">4x1</option>
+            <option value="5 x 1">5x1</option>
+            <option value="1 x 2">1x2</option>
+            <option value="2 x 2">2x2</option>
+            <option value="3 x 2">3x2</option>
+            <option value="4 x 2">4x2</option>
+            <option value="5 x 2">5x2</option>
+            <option value="1 x 3">1x3</option>
+            <option value="2 x 3">2x3</option>
+            <option value="3 x 3">3x3</option>
+            <option value="4 x 3">4x3</option>
+            <option value="5 x 3">5x3</option>
+            <option value="1 x 4">1x4</option>
+            <option value="2 x 4">2x4</option>
+            <option value="3 x 4">3x4</option>
+            <option value="4 x 4">4x4</option>
+            <option value="5 x 4">5x4</option>
+            <option value="1 x 5">1x5</option>
+            <option value="2 x 5">2x5</option>
+            <option value="3 x 5">3x5</option>
+            <option value="4 x 5">4x5</option>
+            <option value="5 x 5">5x5</option>
+          </select>
+          <br><br>
+          <label>Likelihood</label>
+          <select id="LOSIMOLxCL">
+            <option value="Very Low">Very Low</option>
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="High">High</option>
+            <option value="Very High">Very High</option>
+          </select>
+          <p>LxC Driver for Likelihood </p>
+            <input type="text" id="LOSIMOLxCDL">
+          <p>LxC Driver for Consequences</p>
+          <input type="text" id="LOSIMOLxCDC">
+          <p>Rationale for Risk Disposition</p>
+            <input type="text" id="LOSIMORRD">
+          <p>DRM Specific Assumptions</p>
+            <input type="text" id="LOSIMODSA">
+          <br><br>  
+          <label>Level of Evidence (LOE)</label>
+          <select id="LOSIMOLxCLoE">
+            <option value="1 - Strong">1-Strong</option>
+            <option value="2 - Moderate">2-Moderate</option>
+            <option value="3 - Weak">3-Weak</option>
+            <option value="4 - Speculative">4-Speculative</option>
+
+          </select>
+    
+        <h4>Long Term Health</h4>
+          <label >LxC</label>
+          <select id="LOSLTHLxC">
+            <option value="1 x 1">1x1</option>
+            <option value="2 x 1">2x1</option>
+            <option value="3 x 1">3x1</option>
+            <option value="4 x 1">4x1</option>
+            <option value="5 x 1">5x1</option>
+            <option value="1 x 2">1x2</option>
+            <option value="2 x 2">2x2</option>
+            <option value="3 x 2">3x2</option>
+            <option value="4 x 2">4x2</option>
+            <option value="5 x 2">5x2</option>
+            <option value="1 x 3">1x3</option>
+            <option value="2 x 3">2x3</option>
+            <option value="3 x 3">3x3</option>
+            <option value="4 x 3">4x3</option>
+            <option value="5 x 3">5x3</option>
+            <option value="1 x 4">1x4</option>
+            <option value="2 x 4">2x4</option>
+            <option value="3 x 4">3x4</option>
+            <option value="4 x 4">4x4</option>
+            <option value="5 x 4">5x4</option>
+            <option value="1 x 5">1x5</option>
+            <option value="2 x 5">2x5</option>
+            <option value="3 x 5">3x5</option>
+            <option value="4 x 5">4x5</option>
+            <option value="5 x 5">5x5</option>
+          </select>
+          <br><br>
+          <label>Likelihood</label>
+          <select id="LOSLTHLxCL">
+            <option value="Very Low">Very Low</option>
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="High">High</option>
+            <option value="Very High">Very High</option>
+          </select>
+          <p>LxC Driver for Likelihood </p>
+            <input type="text" id="LOSLTHLxCDL">
+          <p>LxC Driver for Consequences</p>
+          <input type="text" id="LOSLTHLxCDC">
+          <p>Rationale for Risk Disposition</p>
+            <input type="text" id="LOSLTHRRD">
+          <p>DRM Specific Assumptions</p>
+            <input type="text" id="LOSLTHDSA">
+          <br><br>  
+          <label>Level of Evidence (LOE)</label>
+          <select id="LOSLTHLxCLoE">
+            <option value="1 - Strong">1-Strong</option>
+            <option value="2 - Moderate">2-Moderate</option>
+            <option value="3 - Weak">3-Weak</option>
+            <option value="4 - Speculative">4-Speculative</option>
+          </select>
+          
+      <h3>Long (30 d - 1 yr)</h3>
+        <h4>In Mission Operations</h4>
+          <label >LxC</label>
+          <select id="LOLIMOLxC">
+            <option value="1 x 1">1x1</option>
+            <option value="2 x 1">2x1</option>
+            <option value="3 x 1">3x1</option>
+            <option value="4 x 1">4x1</option>
+            <option value="5 x 1">5x1</option>
+            <option value="1 x 2">1x2</option>
+            <option value="2 x 2">2x2</option>
+            <option value="3 x 2">3x2</option>
+            <option value="4 x 2">4x2</option>
+            <option value="5 x 2">5x2</option>
+            <option value="1 x 3">1x3</option>
+            <option value="2 x 3">2x3</option>
+            <option value="3 x 3">3x3</option>
+            <option value="4 x 3">4x3</option>
+            <option value="5 x 3">5x3</option>
+            <option value="1 x 4">1x4</option>
+            <option value="2 x 4">2x4</option>
+            <option value="3 x 4">3x4</option>
+            <option value="4 x 4">4x4</option>
+            <option value="5 x 4">5x4</option>
+            <option value="1 x 5">1x5</option>
+            <option value="2 x 5">2x5</option>
+            <option value="3 x 5">3x5</option>
+            <option value="4 x 5">4x5</option>
+            <option value="5 x 5">5x5</option>
+          </select>
+          <br><br>
+          <label>Likelihood</label>
+          <select id="LOLIMOLxCL">
+            <option value="Very Low">Very Low</option>
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="High">High</option>
+            <option value="Very High">Very High</option>
+          </select>
+          <p>LxC Driver for Likelihood </p>
+            <input type="text" id="LOLIMOLxCDL">
+            <p>LxC Driver for Consequences</p>
+            <input type="text" id="LOLIMOLxCDC">
+            <p>Rationale for Risk Disposition</p>
+              <input type="text" id="LOLIMORRD">
+            <p>DRM Specific Assumptions</p>
+              <input type="text" id="LOLIMODSA">
+            <br><br>  
+            <label>Level of Evidence (LOE)</label>
+            <select id="LOLIMOLxCLoE">
+              <option value="1 - Strong">1-Strong</option>
+              <option value="2 - Moderate">2-Moderate</option>
+              <option value="3 - Weak">3-Weak</option>
+              <option value="4 - Speculative">4-Speculative</option>
+            </select>
+        <h4>Long Term Health</h4>
+          <label >LxC</label>
+          <select id="LOLLTHLxC">
+            <option value="1 x 1">1x1</option>
+            <option value="2 x 1">2x1</option>
+            <option value="3 x 1">3x1</option>
+            <option value="4 x 1">4x1</option>
+            <option value="5 x 1">5x1</option>
+            <option value="1 x 2">1x2</option>
+            <option value="2 x 2">2x2</option>
+            <option value="3 x 2">3x2</option>
+            <option value="4 x 2">4x2</option>
+            <option value="5 x 2">5x2</option>
+            <option value="1 x 3">1x3</option>
+            <option value="2 x 3">2x3</option>
+            <option value="3 x 3">3x3</option>
+            <option value="4 x 3">4x3</option>
+            <option value="5 x 3">5x3</option>
+            <option value="1 x 4">1x4</option>
+            <option value="2 x 4">2x4</option>
+            <option value="3 x 4">3x4</option>
+            <option value="4 x 4">4x4</option>
+            <option value="5 x 4">5x4</option>
+            <option value="1 x 5">1x5</option>
+            <option value="2 x 5">2x5</option>
+            <option value="3 x 5">3x5</option>
+            <option value="4 x 5">4x5</option>
+            <option value="5 x 5">5x5</option>
+          </select>
+          <br><br>
+          <label>Likelihood</label>
+          <select id="LOLLTHLxCL">
+            <option value="Very Low">Very Low</option>
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="High">High</option>
+            <option value="Very High">Very High</option>
+          </select>
+          <p>LxC Driver for Likelihood </p>
+            <input type="text" id="LOLLTHLxCDL">
+          <p>LxC Driver for Consequences</p>
+          <input type="text" id="LOLLTHLxCDC">
+          <p>Rationale for Risk Disposition</p>
+            <input type="text" id="LOLLTHRRD">
+          <p>DRM Specific Assumptions</p>
+            <input type="text" id="LOLLTHDSA">
+          <br><br>  
+          <label>Level of Evidence (LOE)</label>
+          <select id="LOLLTHLxCLoE">
+            <option value="1 - Strong">1-Strong</option>
+            <option value="2 - Moderate">2-Moderate</option>
+            <option value="3 - Weak">3-Weak</option>
+            <option value="4 - Speculative">4-Speculative</option>
+          </select>
+    <h2>Lunar Orbital+Surface</h2>
+      <h3>Short (< 30 d)</h3>
+        <h4>In Mission Operations</h4>
+          <label >LxC</label>
+          <select id="LOSSIMOLxC">
+            <option value="1 x 1">1x1</option>
+            <option value="2 x 1">2x1</option>
+            <option value="3 x 1">3x1</option>
+            <option value="4 x 1">4x1</option>
+            <option value="5 x 1">5x1</option>
+            <option value="1 x 2">1x2</option>
+            <option value="2 x 2">2x2</option>
+            <option value="3 x 2">3x2</option>
+            <option value="4 x 2">4x2</option>
+            <option value="5 x 2">5x2</option>
+            <option value="1 x 3">1x3</option>
+            <option value="2 x 3">2x3</option>
+            <option value="3 x 3">3x3</option>
+            <option value="4 x 3">4x3</option>
+            <option value="5 x 3">5x3</option>
+            <option value="1 x 4">1x4</option>
+            <option value="2 x 4">2x4</option>
+            <option value="3 x 4">3x4</option>
+            <option value="4 x 4">4x4</option>
+            <option value="5 x 4">5x4</option>
+            <option value="1 x 5">1x5</option>
+            <option value="2 x 5">2x5</option>
+            <option value="3 x 5">3x5</option>
+            <option value="4 x 5">4x5</option>
+            <option value="5 x 5">5x5</option>
+          </select>
+          <br><br>
+          <label>Likelihood</label>
+          <select id="LOSSIMOLxCL">
+            <option value="Very Low">Very Low</option>
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="High">High</option>
+            <option value="Very High">Very High</option>
+          </select>
+          <p>LxC Driver for Likelihood </p>
+            <input type="text" id="LOSSIMOLxCDL">
+          <p>LxC Driver for Consequences</p>
+          <input type="text" id="LOSSIMOLxCDC">
+          <p>Rationale for Risk Disposition</p>
+            <input type="text" id="LOSSIMORRD">
+          <p>DRM Specific Assumptions</p>
+            <input type="text" id="LOSSIMODSA"> 
+    <br><br>
+    <label>Level of Evidence (LOE)</label>
+        <select id="LOSSIMOLxCLoE">
+          <option value="1 - Strong">1-Strong</option>
+          <option value="2 - Moderate">2-Moderate</option>
+          <option value="3 - Weak">3-Weak</option>
+          <option value="4 - Speculative">4-Speculative</option>
+        </select>
+    
+        <h4>Long Term Health</h4>
+          <label >LxC</label>
+          <select id="LOSSLTHLxC">
+            <option value="1 x 1">1x1</option>
+            <option value="2 x 1">2x1</option>
+            <option value="3 x 1">3x1</option>
+            <option value="4 x 1">4x1</option>
+            <option value="5 x 1">5x1</option>
+            <option value="1 x 2">1x2</option>
+            <option value="2 x 2">2x2</option>
+            <option value="3 x 2">3x2</option>
+            <option value="4 x 2">4x2</option>
+            <option value="5 x 2">5x2</option>
+            <option value="1 x 3">1x3</option>
+            <option value="2 x 3">2x3</option>
+            <option value="3 x 3">3x3</option>
+            <option value="4 x 3">4x3</option>
+            <option value="5 x 3">5x3</option>
+            <option value="1 x 4">1x4</option>
+            <option value="2 x 4">2x4</option>
+            <option value="3 x 4">3x4</option>
+            <option value="4 x 4">4x4</option>
+            <option value="5 x 4">5x4</option>
+            <option value="1 x 5">1x5</option>
+            <option value="2 x 5">2x5</option>
+            <option value="3 x 5">3x5</option>
+            <option value="4 x 5">4x5</option>
+            <option value="5 x 5">5x5</option>
+          </select>
+          <br><br>
+          <label>Likelihood</label>
+          <select id="LOSSLTHLxCL">
+            <option value="Very Low">Very Low</option>
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="High">High</option>
+            <option value="Very High">Very High</option>
+          </select>
+          <p>LxC Driver for Likelihood </p>
+            <input type="text" id="LOSSLTHLxCDL">
+          <p>LxC Driver for Consequences</p>
+          <input type="text" id="LOSSLTHLxCDC">
+          <p>Rationale for Risk Disposition</p>
+            <input type="text" id="LOSSLTHRRD">
+          <p>DRM Specific Assumptions</p>
+            <input type="text" id="LOSSLTHDSA"> 
+          <br><br>  
+          <label>Level of Evidence (LOE)</label>
+          <select id="LOSSLTHLxCLoE">
+            <option value="1 - Strong">1-Strong</option>
+            <option value="2 - Moderate">2-Moderate</option>
+            <option value="3 - Weak">3-Weak</option>
+            <option value="4 - Speculative">4-Speculative</option>
+          </select>
+    
+      <h3>Long (30 d - 1 yr)</h3>
+        <h4>In Mission Operations</h4>
+          <label >LxC</label>
+          <select id="LOSLIMOLxC">
+            <option value="1 x 1">1x1</option>
+            <option value="2 x 1">2x1</option>
+            <option value="3 x 1">3x1</option>
+            <option value="4 x 1">4x1</option>
+            <option value="5 x 1">5x1</option>
+            <option value="1 x 2">1x2</option>
+            <option value="2 x 2">2x2</option>
+            <option value="3 x 2">3x2</option>
+            <option value="4 x 2">4x2</option>
+            <option value="5 x 2">5x2</option>
+            <option value="1 x 3">1x3</option>
+            <option value="2 x 3">2x3</option>
+            <option value="3 x 3">3x3</option>
+            <option value="4 x 3">4x3</option>
+            <option value="5 x 3">5x3</option>
+            <option value="1 x 4">1x4</option>
+            <option value="2 x 4">2x4</option>
+            <option value="3 x 4">3x4</option>
+            <option value="4 x 4">4x4</option>
+            <option value="5 x 4">5x4</option>
+            <option value="1 x 5">1x5</option>
+            <option value="2 x 5">2x5</option>
+            <option value="3 x 5">3x5</option>
+            <option value="4 x 5">4x5</option>
+            <option value="5 x 5">5x5</option>
+          </select>
+          <br><br>
+          <label>Likelihood</label>
+          <select id="LOSLIMOLxCL">
+            <option value="Very Low">Very Low</option>
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="High">High</option>
+            <option value="Very High">Very High</option>
+          </select>
+          <p>LxC Driver for Likelihood </p>
+            <input type="text" id="LOSLIMOLxCDL">
+          <p>LxC Driver for Consequences</p>
+          <input type="text" id="LOSLIMOLxCDC">
+          <p>Rationale for Risk Disposition</p>
+            <input type="text" id="LOSLIMORRD">
+          <p>DRM Specific Assumptions</p>
+            <input type="text" id="LOSLIMODSA"> 
+        <br><br>  
+        <label>Level of Evidence (LOE)</label>
+          <select id="LOSLIMOLxCLoE">
+            <option value="1 - Strong">1-Strong</option>
+            <option value="2 - Moderate">2-Moderate</option>
+            <option value="3 - Weak">3-Weak</option>
+            <option value="4 - Speculative">4-Speculative</option>
+          </select>
+    
+        <h4>Long Term Health</h4>
+          <label >LxC</label>
+          <select id="LOSLLTHLxC">
+            <option value="1 x 1">1x1</option>
+            <option value="2 x 1">2x1</option>
+            <option value="3 x 1">3x1</option>
+            <option value="4 x 1">4x1</option>
+            <option value="5 x 1">5x1</option>
+            <option value="1 x 2">1x2</option>
+            <option value="2 x 2">2x2</option>
+            <option value="3 x 2">3x2</option>
+            <option value="4 x 2">4x2</option>
+            <option value="5 x 2">5x2</option>
+            <option value="1 x 3">1x3</option>
+            <option value="2 x 3">2x3</option>
+            <option value="3 x 3">3x3</option>
+            <option value="4 x 3">4x3</option>
+            <option value="5 x 3">5x3</option>
+            <option value="1 x 4">1x4</option>
+            <option value="2 x 4">2x4</option>
+            <option value="3 x 4">3x4</option>
+            <option value="4 x 4">4x4</option>
+            <option value="5 x 4">5x4</option>
+            <option value="1 x 5">1x5</option>
+            <option value="2 x 5">2x5</option>
+            <option value="3 x 5">3x5</option>
+            <option value="4 x 5">4x5</option>
+            <option value="5 x 5">5x5</option>
+          </select>
+          <br><br>
+          <label>Likelihood</label>
+          <select id="LOSLLTHLxCL">
+            <option value="Very Low">Very Low</option>
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="High">High</option>
+            <option value="Very High">Very High</option>
+          </select>
+          <p>LxC Driver for Likelihood </p>
+            <input type="text" id="LOSLLTHLxCDL">
+          <p>LxC Driver for Consequences</p>
+          <input type="text" id="LOSLLTHLxCDC">
+          <p>Rationale for Risk Disposition</p>
+            <input type="text" id="LOSLLTHRRD">
+          <p>DRM Specific Assumptions</p>
+            <input type="text" id="LOSLLTHDSA"> 
+          <br><br>  
+          <label>Level of Evidence (LOE)</label>
+          <select id="LOSLLTHLxCLoE">
+            <option value="1 - Strong">1-Strong</option>
+            <option value="2 - Moderate">2-Moderate</option>
+            <option value="3 - Weak">3-Weak</option>
+            <option value="4 - Speculative">4-Speculative</option>
+          </select>
+    
+    <h2>Mars</h2>
+      <h3>Preparatory (< 1 yr)</h3>
+        <h4>In Mission Operations</h4>
+          <label >LxC</label>
+          <select id="MPrIMOLxC">
+            <option value="1 x 1">1x1</option>
+            <option value="2 x 1">2x1</option>
+            <option value="3 x 1">3x1</option>
+            <option value="4 x 1">4x1</option>
+            <option value="5 x 1">5x1</option>
+            <option value="1 x 2">1x2</option>
+            <option value="2 x 2">2x2</option>
+            <option value="3 x 2">3x2</option>
+            <option value="4 x 2">4x2</option>
+            <option value="5 x 2">5x2</option>
+            <option value="1 x 3">1x3</option>
+            <option value="2 x 3">2x3</option>
+            <option value="3 x 3">3x3</option>
+            <option value="4 x 3">4x3</option>
+            <option value="5 x 3">5x3</option>
+            <option value="1 x 4">1x4</option>
+            <option value="2 x 4">2x4</option>
+            <option value="3 x 4">3x4</option>
+            <option value="4 x 4">4x4</option>
+            <option value="5 x 4">5x4</option>
+            <option value="1 x 5">1x5</option>
+            <option value="2 x 5">2x5</option>
+            <option value="3 x 5">3x5</option>
+            <option value="4 x 5">4x5</option>
+            <option value="5 x 5">5x5</option>
+          </select>
+          <br><br>
+          <label>Likelihood</label>
+          <select id="MPrIMOLxCL">
+            <option value="Very Low">Very Low</option>
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="High">High</option>
+            <option value="Very High">Very High</option>
+          </select>
+          <p>LxC Driver for Likelihood </p>
+            <input type="text" id="MPrIMOLxCDL">
+          <p>LxC Driver for Consequences</p>
+          <input type="text" id="MPrIMOLxCDC">
+          <p>Rationale for Risk Disposition</p>
+            <input type="text" id="MPrIMORRD">
+          <p>DRM Specific Assumptions</p>
+            <input type="text" id="MPrIMODSA"> 
+          <br><br>  
+          <label>Level of Evidence (LOE)</label>
+          <select id="MPrIMOLxCLoE">
+            <option value="1 - Strong">1-Strong</option>
+            <option value="2 - Moderate">2-Moderate</option>
+            <option value="3 - Weak">3-Weak</option>
+            <option value="4 - Speculative">4-Speculative</option>
+          </select>
+    
+        <h4>Long Term Health</h4>
+          <label >LxC</label>
+          <select id="MPrLTHLxC">
+            <option value="1 x 1">1x1</option>
+            <option value="2 x 1">2x1</option>
+            <option value="3 x 1">3x1</option>
+            <option value="4 x 1">4x1</option>
+            <option value="5 x 1">5x1</option>
+            <option value="1 x 2">1x2</option>
+            <option value="2 x 2">2x2</option>
+            <option value="3 x 2">3x2</option>
+            <option value="4 x 2">4x2</option>
+            <option value="5 x 2">5x2</option>
+            <option value="1 x 3">1x3</option>
+            <option value="2 x 3">2x3</option>
+            <option value="3 x 3">3x3</option>
+            <option value="4 x 3">4x3</option>
+            <option value="5 x 3">5x3</option>
+            <option value="1 x 4">1x4</option>
+            <option value="2 x 4">2x4</option>
+            <option value="3 x 4">3x4</option>
+            <option value="4 x 4">4x4</option>
+            <option value="5 x 4">5x4</option>
+            <option value="1 x 5">1x5</option>
+            <option value="2 x 5">2x5</option>
+            <option value="3 x 5">3x5</option>
+            <option value="4 x 5">4x5</option>
+            <option value="5 x 5">5x5</option>
+          </select>
+          <br><br>
+          <label>Likelihood</label>
+          <select id="MPrLTHLxCL">
+            <option value="Very Low">Very Low</option>
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="High">High</option>
+            <option value="Very High">Very High</option>
+          </select>
+          <p>LxC Driver for Likelihood </p>
+            <input type="text" id="MPrLTHLxCDL">
+          <p>LxC Driver for Consequences</p>
+          <input type="text" id="MPrLTHLxCDC">
+          <p>Rationale for Risk Disposition</p>
+            <input type="text" id="MPrLTHRRD">
+          <p>DRM Specific Assumptions</p>
+            <input type="text" id="MPrLTHDSA"> 
+          <br><br>  
+          <label>Level of Evidence (LOE)</label>
+          <select id="MPrLTHLxCLoE">
+            <option value="1 - Strong">1-Strong</option>
+            <option value="2 - Moderate">2-Moderate</option>
+            <option value="3 - Weak">3-Weak</option>
+            <option value="4 - Speculative">4-Speculative</option>
+          </select>
+
+      <h3>Planetary (730 d - 1224 d)</h3>
+        <h4>In Mission Operations</h4>
+          <label >LxC</label>
+          <select id="MPlIMOLxC">
+            <option value="1 x 1">1x1</option>
+            <option value="2 x 1">2x1</option>
+            <option value="3 x 1">3x1</option>
+            <option value="4 x 1">4x1</option>
+            <option value="5 x 1">5x1</option>
+            <option value="1 x 2">1x2</option>
+            <option value="2 x 2">2x2</option>
+            <option value="3 x 2">3x2</option>
+            <option value="4 x 2">4x2</option>
+            <option value="5 x 2">5x2</option>
+            <option value="1 x 3">1x3</option>
+            <option value="2 x 3">2x3</option>
+            <option value="3 x 3">3x3</option>
+            <option value="4 x 3">4x3</option>
+            <option value="5 x 3">5x3</option>
+            <option value="1 x 4">1x4</option>
+            <option value="2 x 4">2x4</option>
+            <option value="3 x 4">3x4</option>
+            <option value="4 x 4">4x4</option>
+            <option value="5 x 4">5x4</option>
+            <option value="1 x 5">1x5</option>
+            <option value="2 x 5">2x5</option>
+            <option value="3 x 5">3x5</option>
+            <option value="4 x 5">4x5</option>
+            <option value="5 x 5">5x5</option>
+          </select>
+          <br><br>
+          <label>Likelihood</label>
+          <select id="MPlIMOLxCL">
+            <option value="Very Low">Very Low</option>
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="High">High</option>
+            <option value="Very High">Very High</option>
+          </select>
+          <p>LxC Driver for Likelihood </p>
+            <input type="text" id="MPlIMOLxCDL">
+          <p>LxC Driver for Consequences</p>
+          <input type="text" id="MPlIMOLxCDC">
+          <p>Rationale for Risk Disposition</p>
+            <input type="text" id="MPlIMORRD">
+          <p>DRM Specific Assumptions</p>
+            <input type="text" id="MPlIMODSA"> 
+          <br><br>  
+          <label>Level of Evidence (LOE)</label>
+          <select id="MPlIMOLxCLoE">
+            <option value="1 - Strong">1-Strong</option>
+            <option value="2 - Moderate">2-Moderate</option>
+            <option value="3 - Weak">3-Weak</option>
+            <option value="4 - Speculative">4-Speculative</option>
+          </select>
+
+        <h4>Long Term Health</h4>
+          <label >LxC</label>
+          <select id=MPlLTHLxC>
+            <option value="1 x 1">1x1</option>
+            <option value="2 x 1">2x1</option>
+            <option value="3 x 1">3x1</option>
+            <option value="4 x 1">4x1</option>
+            <option value="5 x 1">5x1</option>
+            <option value="1 x 2">1x2</option>
+            <option value="2 x 2">2x2</option>
+            <option value="3 x 2">3x2</option>
+            <option value="4 x 2">4x2</option>
+            <option value="5 x 2">5x2</option>
+            <option value="1 x 3">1x3</option>
+            <option value="2 x 3">2x3</option>
+            <option value="3 x 3">3x3</option>
+            <option value="4 x 3">4x3</option>
+            <option value="5 x 3">5x3</option>
+            <option value="1 x 4">1x4</option>
+            <option value="2 x 4">2x4</option>
+            <option value="3 x 4">3x4</option>
+            <option value="4 x 4">4x4</option>
+            <option value="5 x 4">5x4</option>
+            <option value="1 x 5">1x5</option>
+            <option value="2 x 5">2x5</option>
+            <option value="3 x 5">3x5</option>
+            <option value="4 x 5">4x5</option>
+            <option value="5 x 5">5x5</option>
+          </select>
+          <br><br>
+          <label>Likelihood</label>
+          <select id="MPlLTHLxCL">
+            <option value="Very Low">Very Low</option>
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="High">High</option>
+            <option value="Very High">Very High</option>
+          </select>
+          <p>LxC Driver for Likelihood </p>
+            <input type="text" id="MPlLTHLxCDL">
+          <p>LxC Driver for Consequences</p>
+          <input type="text" id="MPlLTHLxCDC">
+          <p>Rationale for Risk Disposition</p>
+            <input type="text" id="MPlLTHRRD">
+          <p>DRM Specific Assumptions</p>
+            <input type="text" id="MPlLTHDSA">
+          <br><br>  
+          <label>Level of Evidence (LOE)</label>
+          <select id="MPlLTHLxCLoE">
+            <option value="1 - Strong">1-Strong</option>
+            <option value="2 - Moderate">2-Moderate</option>
+            <option value="3 - Weak">3-Weak</option>
+            <option value="4 - Speculative">4-Speculative</option>
+          </select>
+
+    </form>
+    <br>
+      <button type="button" onclick="submit()" id="submitb">Submit</button>
+
+  
+  <!-- <a href = "test.txt" download="test">
+      <button type="button">Download</button>
+  </a> -->
+  <p id="downlod"></p>
+  <p id="file"></p>
+  <script src="script.js"></script>
+</body>
+
+</html>
