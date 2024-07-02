@@ -112,13 +112,13 @@ function createSecondaryHazard(PH) {
 function createLxcTable(LxC, RD) {
 	var hexcode = ""
 	var fC = ""
-	if (LxC == "1 x 1" || LxC == "2 x 1" || LxC == "3 x 1" || LxC == "4 x 1" || LxC == "5 x 1" || LxC == "1 x 2" || LxC == "1 x 3" || LxC == "1 x 4") {
+	if (LxC == "1x1" || LxC == "2x1" || LxC == "3x1" || LxC == "4x1" || LxC == "5x1" || LxC == "1x2" || LxC == "1x3" || LxC == "1x4") {
 		hexcode = "#00B050"
 		fC = "#000000"
-	} else if (LxC == "2 x 2" || LxC == "3 x 2") {
+	} else if (LxC == "2x2" || LxC == "3x2") {
 		hexcode = "#00B050"
 		fC = "#000000"
-	} else if (LxC == "4 x 2" || LxC == "5 x 2" || LxC == "4 x 3" || LxC == "3 x 3" || LxC == "2 x 3" || LxC == "3 x 4" || LxC == "2 x 4" || LxC == "2 x 5" || LxC == "1 x 5") {
+	} else if (LxC == "4x2" || LxC == "5x2" || LxC == "4x3" || LxC == "3x3" || LxC == "2x3" || LxC == "3x4" || LxC == "2x4" || LxC == "2x5" || LxC == "1x5") {
 		hexcode = "#FFFF00"
 		fC = "#000000"
 	} else {
@@ -149,13 +149,13 @@ function createQuickLookLeftTable(LEOSIMOLxC, LEOSIMOLxCL, LEOSLTHLxC, LEOSLTHLx
 		var LxC = listLxC[i]
 		var fC = ""
 		var hexcode = ""
-		if (LxC == "1 x 1" || LxC == "2 x 1" || LxC == "3 x 1" || LxC == "4 x 1" || LxC == "5 x 1" || LxC == "1 x 2" || LxC == "1 x 3" || LxC == "1 x 4") {
+		if (LxC == "1x1" || LxC == "2x1" || LxC == "3x1" || LxC == "4x1" || LxC == "5x1" || LxC == "1x2" || LxC == "1x3" || LxC == "1x4") {
 			hexcode = "#00B050"
 			fC = "#000000"
-		} else if (LxC == "2 x 2" || LxC == "3 x 2") {
+		} else if (LxC == "2x2" || LxC == "3x2") {
 			hexcode = "#00B050"
 			fC = "#000000"
-		} else if (LxC == "4 x 2" || LxC == "5 x 2" || LxC == "4 x 3" || LxC == "3 x 3" || LxC == "2 x 3" || LxC == "3 x 4" || LxC == "2 x 4" || LxC == "2 x 5" || LxC == "1 x 5") {
+		} else if (LxC == "4x2" || LxC == "5x2" || LxC == "4x3" || LxC == "3x3" || LxC == "2x3" || LxC == "3x4" || LxC == "2x4" || LxC == "2x5" || LxC == "1x5") {
 			hexcode = "#FFFF00"
 			fC = "#000000"
 		} else {
@@ -177,13 +177,13 @@ function createQuickLookRightTable(LEOSIMOLxC, LEOSIMOLxCL, LEOSLTHLxC, LEOSLTHL
 		var LxC = listLxC[i]
 		var fC = ""
 		var hexcode = ""
-		if (LxC == "1 x 1" || LxC == "2 x 1" || LxC == "3 x 1" || LxC == "4 x 1" || LxC == "5 x 1" || LxC == "1 x 2" || LxC == "1 x 3" || LxC == "1 x 4") {
+		if (LxC == "1x1" || LxC == "2x1" || LxC == "3x1" || LxC == "4x1" || LxC == "5x1" || LxC == "1x2" || LxC == "1x3" || LxC == "1x4") {
 			hexcode = "#00B050"
 			fC = "#000000"
-		} else if (LxC == "2 x 2" || LxC == "3 x 2") {
+		} else if (LxC == "2x2" || LxC == "3x2") {
 			hexcode = "#00B050"
 			fC = "#000000"
-		} else if (LxC == "4 x 2" || LxC == "5 x 2" || LxC == "4 x 3" || LxC == "3 x 3" || LxC == "2 x 3" || LxC == "3 x 4" || LxC == "2 x 4" || LxC == "2 x 5" || LxC == "1 x 5") {
+		} else if (LxC == "4x2" || LxC == "5x2" || LxC == "4x3" || LxC == "3x3" || LxC == "2x3" || LxC == "3x4" || LxC == "2x4" || LxC == "2x5" || LxC == "1x5") {
 			hexcode = "#FFFF00"
 			fC = "#000000"
 		} else {
