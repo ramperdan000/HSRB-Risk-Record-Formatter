@@ -24,6 +24,7 @@
 
 <body id="body">
   <h1>Risk Summary Formatting</h1>
+  <br>
   <form>
   <label>Primary Hazard</label>
       <!-- <select id=RSPH onchange="changeSecondHazard()"> -->
@@ -33,14 +34,17 @@
         <option value="Radiation">Radiation</option>
         <option value="Distance from Earth">Distance from Earth</option>
         <option value="Isolation and Containment">Isolation and Containment</option>
-        <option value="Hostile Closed Enviroment">Hostile Closed Enviroment</option>
+        <option value="Hostile Closed Environment">Hostile Closed Environment</option>
         </select>
         <div id="RSSHS">
 
         </div>
     <div id = "hazardsButtonDiv">
+      <br>
       <button type="button" onclick="createSecondaryHazard('RSPH')">Add Secondary Hazard</button>
+      
     </div> 
+    <br>
   <p>CMs Prevention </p>
     <textarea cols="50" type="text" id="RSCMP"></textarea>
   <p>CMs Monitoring</p>
@@ -49,12 +53,13 @@
     <textarea cols="50" type="text" id="RSCMI"></textarea>
   <p>Contributing Factors</p>
     <textarea cols="50" type="text" id="RSCF"></textarea>
-  <p>State of Knowledge </p>
+  <p>Present State of Knowledge </p>
   <textarea cols="50" type="text" id="RSSK"></textarea>
-  <p>Risk Dispostion Rationale </p>
+  <p>Gaps in Knowledge </p>
   <textarea cols="50" type="text" id="RSRDR"></textarea></form>
-
+  <hr style="margin: 2em auto;height: 5px; background-color: #6ebbff; border: none;">
   <h1>Assumptions</h1>
+  <br>
   <form>
     <h2>Low Earth Orbit</h2>
       <h3>Short (< 30 d)</h3>
@@ -79,16 +84,22 @@
     <h2>Additional Counter Measures</h2>
       <div id=ALxCAE></div>
     <div id="additonalCounterMeasuresButtonDiv">
-      <button type=button onclick="createAdditionalCounterMeasures()">Add additional Counter Measures</button></div>
+      <br>
+      <button type=button onclick="createAdditionalCounterMeasures()">Add additional Counter Measures</button>
+      
+    </div>
+    <!-- <br>
     <h2>Counter Measures In Use</h2>
     <h4>Prevention</h4>
     <textarea cols="50" type="text" id="ACMP"></textarea>
     <h4>Monitoring</h4>
     <textarea cols="50" type="text" id="ACMM"></textarea>
     <h4>Intervention</h4>
-    <textarea cols="50" type="text" id="ACMI"></textarea>
+    <textarea cols="50" type="text" id="ACMI"></textarea> -->
   </form>
+  <hr style="margin: 2em auto;height: 5px; background-color: #6ebbff; border: none;">
   <h1>Risk Postures Formatting</h1>
+  <br>
   
   <form>
     <h2>Low Earth Orbit</h2>
@@ -148,10 +159,11 @@
                 <option value="3 - Weak">3-Weak</option>
                 <option value="4 - Speculative">4-Speculative</option>
               </select>
-    <br><br>
+    <br><br><br>
         
         
-        
+        <h2>Low Earth Orbit</h2>
+          <h3>Short (< 30 d)</h3>
           
         <h4>Long Term Health</h4>
           <label >LxC</label>
@@ -209,7 +221,8 @@
                 <option value="4 - Speculative">4-Speculative</option>
 
               </select>
-
+    <br><br><br>
+    <h2>Low Earth Orbit</h2>
       <h3>Long (30 d - 1 yr)</h3>
         <h4>In Mission Operations</h4>
           <label >LxC</label>
@@ -267,6 +280,9 @@
             <option value="4 - Speculative">4-Speculative</option>
 
           </select>
+    <br><br><br>
+    <h2>Low Earth Orbit</h2>
+      <h3>Long (30 d - 1 yr)</h3>
         <h4>Long Term Health</h4>
           <label >LxC</label>
           <select id="LEOLLTHLxC">
@@ -324,6 +340,7 @@
               <option value="4 - Speculative">4-Speculative</option>
 
             </select>
+    <br><br><br>
     <h2>Lunar Orbital</h2>
       <h3>Short (< 30 d)</h3>
         <h4>In Mission Operations</h4>
@@ -382,7 +399,9 @@
             <option value="4 - Speculative">4-Speculative</option>
 
           </select>
-    
+    <br><br><br>
+    <h2>Lunar Orbital</h2>
+      <h3>Short (< 30 d)</h3>
         <h4>Long Term Health</h4>
           <label >LxC</label>
           <select id="LOSLTHLxC">
@@ -437,7 +456,8 @@
             <option value="3 - Weak">3-Weak</option>
             <option value="4 - Speculative">4-Speculative</option>
           </select>
-          
+    <br><br><br>
+          <h2>Lunar Orbital</h2>
       <h3>Long (30 d - 1 yr)</h3>
         <h4>In Mission Operations</h4>
           <label >LxC</label>
@@ -494,6 +514,9 @@
               <option value="3 - Weak">3-Weak</option>
               <option value="4 - Speculative">4-Speculative</option>
             </select>
+    <br><br><br>
+        <h2>Lunar Orbital</h2>
+    <h3>Long (30 d - 1 yr)</h3>
         <h4>Long Term Health</h4>
           <label >LxC</label>
           <select id="LOLLTHLxC">
@@ -549,7 +572,8 @@
             <option value="3 - Weak">3-Weak</option>
             <option value="4 - Speculative">4-Speculative</option>
           </select>
-    <h2>Lunar Orbital+Surface</h2>
+    <br><br><br>
+    <h2>Lunar Orbital + Surface</h2>
       <h3>Short (< 30 d)</h3>
         <h4>In Mission Operations</h4>
           <label >LxC</label>
@@ -606,7 +630,9 @@
           <option value="3 - Weak">3-Weak</option>
           <option value="4 - Speculative">4-Speculative</option>
         </select>
-    
+    <br><br><br>
+    <h2>Lunar Orbital + Surface</h2>
+      <h3>Short (< 30 d)</h3>
         <h4>Long Term Health</h4>
           <label >LxC</label>
           <select id="LOSSLTHLxC">
@@ -662,7 +688,8 @@
             <option value="3 - Weak">3-Weak</option>
             <option value="4 - Speculative">4-Speculative</option>
           </select>
-    
+    <br><br><br>
+    <h2>Lunar Orbital + Surface</h2>
       <h3>Long (30 d - 1 yr)</h3>
         <h4>In Mission Operations</h4>
           <label >LxC</label>
@@ -719,7 +746,9 @@
             <option value="3 - Weak">3-Weak</option>
             <option value="4 - Speculative">4-Speculative</option>
           </select>
-    
+    <br><br><br>
+    <h2>Lunar Orbital + Surface</h2>
+      <h3>Long (30 d - 1 yr)</h3>
         <h4>Long Term Health</h4>
           <label >LxC</label>
           <select id="LOSLLTHLxC">
@@ -775,7 +804,7 @@
             <option value="3 - Weak">3-Weak</option>
             <option value="4 - Speculative">4-Speculative</option>
           </select>
-    
+    <br><br><br>
     <h2>Mars</h2>
       <h3>Preparatory (< 1 yr)</h3>
         <h4>In Mission Operations</h4>
@@ -833,7 +862,9 @@
             <option value="3 - Weak">3-Weak</option>
             <option value="4 - Speculative">4-Speculative</option>
           </select>
-    
+    <br><br><br>
+    <h2>Mars</h2>
+      <h3>Preparatory (< 1 yr)</h3>
         <h4>Long Term Health</h4>
           <label >LxC</label>
           <select id="MPrLTHLxC">
@@ -889,7 +920,8 @@
             <option value="3 - Weak">3-Weak</option>
             <option value="4 - Speculative">4-Speculative</option>
           </select>
-
+    <br><br><br>
+    <h2>Mars</h2>
       <h3>Planetary (730 d - 1224 d)</h3>
         <h4>In Mission Operations</h4>
           <label >LxC</label>
@@ -946,7 +978,9 @@
             <option value="3 - Weak">3-Weak</option>
             <option value="4 - Speculative">4-Speculative</option>
           </select>
-
+    <br><br><br>
+    <h2>Mars</h2>
+      <h3>Planetary (730 d - 1224 d)</h3>
         <h4>Long Term Health</h4>
           <label >LxC</label>
           <select id=MPlLTHLxC>
@@ -1004,8 +1038,10 @@
           </select>
 
     </form>
-    <br>
+  <hr style="margin: 2em auto;height: 5px; background-color: #6ebbff; border: none;">
+      <div id="submitStuff">
       <button type="button" onclick="submit()" id="submitb">Submit</button>
+      </div>
 
   
   <!-- <a href = "test.txt" download="test">
